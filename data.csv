@@ -1,0 +1,501 @@
+id,price,nebenkosten,kaltmiete,location_postalCode,location_cityName,location_street,roomSize
+1000015,229,65,164,33604,Bielefeld Innenstadt,Ehlentruper Weg,16
+1000022,250,50,200,33602,Bielefeld INNESTADT,BUDDESTR.,20
+1000026,245,70,175,97218,Würzburg Gerbrunn,Stefan-Krämer-Straße,13
+1000031,333,40,293,69214,Heidelberg Eppelheim,Hauptstr.,23
+1000034,285,65,220,31134,Hildesheim Mitte,Sprengerstraße,26
+1000036,150,0,150,70197,Stuttgart West,Johannesstr.,16
+1000037,350,0,350,81675,München Au-Haidhausen,Lucile-Grahn-Str.,15
+1000071,300,0,300,58454,Witten/Herdecke Stockum,Liegnitzer Str.,15
+1000072,340,40,300,65185,Wiesbaden Innenstadt,Moritzstraße,24
+1000075,140,0,140,37083,Göttingen Innenstadt,Lotzestrasse,17
+1000076,380,70,310,81379,München Thalkirchen-Obersendling-Forstenried-Fürstenried-Solln,Geltingerstr.,21
+1000086,239,59,180,33615,Bielefeld Innenstadt,Arndtstr.,16
+1000078,260,20,240,54294,Trier Trier-West,Brentanostr.,18
+1000089,325,30,295,64289,Darmstadt Darmstadt,Schuknechtstr.,14
+1000091,197,48,149,9112,Chemnitz Kaßberg,Walter- Oertel- Str.,15
+1000102,290,17,273,54292,Trier Innenstadt,Lindenstraße,12
+1000105,287,75,212,69117,Heidelberg Altstadt,Märzgasse,21
+1000108,282,40,242,38114,Braunschweig Braunschweig,wendenring,25
+1000125,280,0,280,5020,alzburg ,kendlerstraße,15
+1000140,213,0,213,80805,München Schwabing-Freimann,Biedersteinerstr.,16
+1000145,350,50,300,50678,Köln Altstadt-Süd,Achterstr.,24
+1000147,430,80,350,69115,Heidelberg Weststadt,Gaisbergstr.,17
+1000155,380,80,300,76137,Karlsruhe Südstadt,Nebeniusstr.,26
+1000156,450,50,400,20255,Hamburg Eimsbüttel,am weiher,35
+1000160,250,0,250,63065,Offenbach am Main Stadtmitte,Mittelseestr.,17
+1000168,270,0,270,69120,Heidelberg Neuenheim,INF,15
+1000173,226,43,183,48151,Münster Centrum,Von-Kluck-Straße,11
+1000176,264,64,200,96052,Bamberg Innenstadt,Spiegelgraben,13
+1000184,230,15,215,4318,Leipzig Reudnitz,Schirmerstr.,15
+1000187,280,45,235,38106,Braunschweig Braunschweig,Gliesmaroder Str,18
+1000188,264,64,200,96052,Bamberg Innenstadt,Spiegelgraben,13
+1000191,310,0,310,54290,Trier Innenstadt,Wilhelm-Rautenstrauchstr.,13
+1000192,202,60,142,49084,Osnabrück Widukindland,Bremer Straße,15
+1000199,350,75,275,50969,Köln Zollstock,Ürziger Str.,14
+1000205,230,0,230,94032,Passau Altstadt,Ort,18
+1000211,325,30,295,69115,Heidelberg Weststadt,Hildastrasse,18
+1000219,277,60,217,69124,Heidelberg Kirchheim,Heuauer Weg,13
+1000242,180,0,180,26131,Oldenburg Eversten,Eichenstraße,15
+1000244,340,0,340,5020,alzburg Alpenstraße ,Alpenstraße,15
+1000269,190,30,160,28199,Bremen Neustadt,Rü-Str,14
+1000254,250,70,180,18057,Rostock Kröpeliner Tor Vorstadt,Margaretenstrasse,20
+1000273,194,68,126,53127,Bonn Ippendorf,Gudenauer weg,13
+1000279,155,0,155,33619,Bielefeld Dornberg,Kreuzbergerstr.,13
+1000283,515,85,430,53177,Bonn Bad Godesberg,Zanderstr.,40
+1000294,310,50,260,22457,Hamburg Schnelsen,Burgwedel,20
+1000296,267,10,257,28239,Bremen Walle,Auguststr,23
+1000301,170,76,94,44799,Bochum Querenburg,Laerheidestr.,11
+1000306,300,50,250,69121,Heidelberg Handschuhsheim,Handschuhsheimer Landstaße,16
+1000312,260,50,210,70599,Stuttgart Plieningen,Roggenstr.,17
+1000316,270,0,270,69221,Heidelberg Dossenheim,Uhlandstrasse,15
+1000319,120,20,100,98693,Ilmenau Stollen,Bergrat-Voigt Str.,10
+1000344,275,25,250,94034,Passau Altstadt,Neue Rieser Str.,18
+1000353,155,0,155,99092,Erfurt Andreasvorstadt,Borntalweg,17
+1000358,225,42,183,4275,Leipzig Südvorstadt,Alfred-Kästner-Str.,33
+1000361,370,60,310,6020,nnsbruck ,Fischnalerstraße,14
+1000393,212,50,162,6114,Halle (Saale) BURG GIEBICHENSTEIN,Große Brunnenstr.,20
+1000413,312,44,268,50823,Köln Ehrenfeld,Venloer Str.,18
+1000414,312,44,268,50823,Köln Ehrenfeld,Venloer Str.,18
+1000416,265,95,170,12045,Berlin Neukölln,Sonnenallee,15
+1000418,220,0,220,1855,Dresden Sebnitz,Blumenstr.,21
+1000426,280,45,235,85354,Freising Innenstadt,Heinestr.,18
+1000435,210,0,210,4317,Leipzig Reudnitz-Thonberg,Breite Str.,22
+1000443,290,90,200,41068,Mönchengladbach Venn,nähe handelshof,18
+1000402,50,0,50,30449,Hannover Cebit- Zimmer!!!,Jacobsstr.,16
+1000447,240,0,240,96047,Bamberg Innenstadt,obere mühlen,20
+1000455,340,30,310,20099,Hamburg St Georg,Greifswalderstrasse,10
+1000458,136,37,99,99423,Weimar Altstadt,Karl-Haußknechtstrasse,15
+1000465,335,80,255,79359,Emmendingen Riegel,Zähringerstr.,15
+1000471,135,25,110,1159,Dresden Löbtau,Tharandter Straße,13
+1000478,220,20,200,134,Rom Laurentina,Via Mandriola,7
+1000484,197,30,167,4177,Leipzig Lindenau,Merseburger Strasse,25
+1000504,241,30,211,10997,Berlin Kreuzberg,Muskauer Str.,27
+1000512,240,20,220,44787,Bochum Innenstadt,Luisenstraße,16
+1000516,267,0,267,24103,Kiel Damperhof,holtenauer Str.,20
+1000519,280,68,212,7749,Jena Jena-Stadt,Lindenhöhe,22
+1000546,275,60,215,37073,Göttingen Innenstadt,Ritterplan,23
+1000552,300,0,300,20357,Hamburg St Pauli,sternstraße,10
+1000558,177,0,177,99089,Erfurt Andreasvorstadt,Talstraße,15
+1000547,160,60,100,4229,Leipzig Schleußig,Könneritzstr.,12
+1000560,263,42,221,10243,Berlin Friedrichshain,warschauer strasse,25
+1000565,290,0,290,48159,Münster Centrum,Grevenerstraße,13
+1000578,273,25,248,93055,Regensburg Ostenviertel,Pürkelgutweg,17
+1000586,300,0,300,1220,ien Wien,Spandlgasse,13
+1000590,430,50,380,80799,München Schwabing,Georgenstraße.,24
+1000609,120,0,120,6110,Halle (Saale) südliche Innenstadt,Bernhardystr.,12
+1000612,245,35,210,30171,Hannover Südstadt,Schlägerstraße,20
+1000613,237,25,212,79115,Freiburg im Breisgau haslach,Weidenstaße,15
+1000615,218,50,168,73760,Esslingen am Neckar Ostfildern-Nellingen,Beethovenstr.,12
+1000717,180,55,125,99425,Weimar Oberweimar,Martin-Lutherstr.,14
+1000732,220,0,220,4103,Leipzig Zentrum,Grünewaldstrasse,20
+1000734,250,0,250,59494,Soest zentrum,Pollhofstr.,18
+1000745,350,50,300,35037,Marburg Kernstadt,Uferstraße,30
+1000749,233,30,203,38100,Braunschweig Braunschweig,Leonhardstr.,18
+1000751,200,25,175,65385,Oestrich-Winkel Rüdesheim,Ludwig-Schneider-Str.,12
+1000762,132,0,132,50931,Köln Lindenthal,Theresienstr.,11
+1000764,230,50,180,22117,Hamburg Billstedt,CottawegC,13
+1000773,230,0,230,7743,Jena Jena-Stadt,Grietgasse,12
+1000774,185,30,155,54290,Trier Trier-Süd,Saarstr.,12
+1000817,235,45,190,79117,Freiburg im Breisgau Littenweiler,Aumattenweg,12
+1000823,250,50,200,95444,Bayreuth City,Erlanger Str.,30
+1000827,177,0,177,17491,Greifswald Schönwalde 2,Prokofjewstraße,7
+1000839,250,50,200,86150,Augsburg Innenstadt,Predigerberg,15
+1000790,240,45,195,48147,Münster Centrum,Thomas-Morus-Weg,14
+1000829,295,35,260,21335,Lüneburg Lüneburg,Sülztorstrasse,18
+1000850,261,0,261,28195,Bremen Bahnhofsvorstadt,An der Weide,16
+1000864,550,80,470,12683,Berlin Biesdorf,Berlin,30
+1000873,368,80,288,82166,München Pasing-Obermenzing,Lochhamerstr.,30
+1000874,300,0,300,7011,Palma de Mallorca palmademallorca,rafael rodriguez mendez,16
+1000877,190,55,135,4177,Leipzig Lindenau,raimundstraße,16
+1000881,300,0,300,8010,raz Zentrum,Körösistraße,20
+1000885,205,0,205,35394,Gießen uninah,Memeler Straße,12
+1000887,250,0,250,56070,Koblenz Lützel,Mayenerstr.,19
+1000900,300,80,220,10963,Berlin Kreuzberg,Obentrautstr.,28
+1000901,190,70,120,6114,Halle (Saale) Giebichenstein,Wittekindstrasse,28
+1000910,270,120,150,22415,Hamburg Langenhorn,Reekamp,24
+1000918,250,0,250,69115,Heidelberg Weststadt,Dantestr.,13
+1000933,150,40,110,26135,Oldenburg Innenstadt,Nikolaustr.,14
+1000936,190,0,190,10553,Berlin Mitte,Huttenstraße SFL,12
+1000940,220,35,185,48145,Münster Centrum,Sophienstr.,10
+1000943,316,30,286,50825,Köln Ehrenfeld,Maarweg,15
+1000951,250,0,250,48165,Münster Hiltrup,st,15
+1000954,281,63,218,9599,Freiberg Altstadt,Burgstraße,22
+1000969,165,0,165,48151,Münster Aaseestadt,Blumenstraße,11
+1000978,365,15,350,22767,Hamburg Altona-Altstadt,Mörkenstraß,16
+1000992,230,0,230,48147,Münster Kreuzviertel,Dürerstr.,13
+1001001,400,60,340,68219,Mannheim Rheinau,F.-Nansen-Weg,20
+1000970,370,60,310,80995,München Moosach,Joseph-Seifried-Str.,26
+1000995,305,65,240,52062,Aachen Aachen,Marienbongard,18
+1001015,335,35,300,55116,Mainz Zentrum,Binger Str.,21
+1001018,285,65,220,50674,Köln Neustadt-Süd,Heinsbergstr.,18
+1001033,400,50,350,81669,München Au-Haidhausen,Balanstr.,14
+1001038,130,0,130,30167,Hannover Calenberger Neustadt,Emdenstraße,12
+1001046,280,30,250,30449,Hannover Linden-Süd,Deisterstraße,18
+1001048,250,30,220,55129,Mainz Hechtsheim,Weststraße,16
+1001054,350,20,330,80337,München Ludwigsvorstadt-Isarvorstadt,Zenettiplatz,14
+1001058,120,0,120,1099,Dresden Neustadt,Bautzner Str.,13
+1001059,225,40,185,68159,Mannheim Jungbusch,Holzstraße,16
+1001072,200,0,200,4275,Leipzig Südvorstadt,Arthur-Hoffmann-Straße,22
+1001081,290,20,270,95447,Bayreuth Birken,"",24
+1001083,285,0,285,1020,ien ,Gabelsbergergasse,22
+1001088,450,50,400,1160,ien Ottakring/ Wilhelminenberg,Gallitzinstraße,20
+1001090,245,50,195,48147,Münster Wienburg,Mecklenburger Str.,14
+1001103,186,0,186,4275,Leipzig Südvorstadt,Kurt-Eisner-Str.,15
+1001109,235,37,198,72127,Tübingen Wankheim,Hauptstr.,15
+1001125,240,0,240,53111,Bonn Altstadt,Heerstr.,15
+1001127,290,70,220,50676,Köln Neustadt-Süd,Pantaleonswall,16
+1001144,287,50,237,48161,Münster Gievenbeck,Twenteweg,20
+1001152,290,30,260,68161,Mannheim Quadrate,T,18
+1001154,230,60,170,87439,Kempten (Allgäu) Zentrum,Fuerstenstraße,20
+1001155,250,0,250,13187,Berlin Pankow,wolfshagenerstrasse,25
+1001160,280,50,230,33100,Paderborn Uni nah,Hochstiftstr.,28
+1001179,290,0,290,10555,Berlin Tiergarten,Bochumer Str.,14
+1001181,250,50,200,33100,Paderborn Uni nah,Hochstiftstr.,16
+1001183,240,75,165,64297,Darmstadt Eberstadt,Heidelberger Landstr.,16
+1001169,25,0,25,8025,Barcelona Sagrada Familia,Napoles,12
+1001189,250,73,177,4107,Leipzig Zentrum-Süd,Härtelstraße,20
+1001203,270,90,180,44791,Bochum Innenstadt,Josephstr.,24
+1001204,230,30,200,83026,Rosenheim WesterndorfbeiPang,Stocka,15
+1001207,285,0,285,79100,Freiburg im Breisgau Innenstadt,Kronenstr,14
+1001216,245,80,165,35037,Marburg Kernstadt,nähe E-Kirche,15
+1001217,340,0,340,20535,Hamburg Eilbek,Quellenweg,20
+1001229,280,0,280,10405,Berlin Prenzlauer Berg,Danziger Straße,17
+1001232,285,70,215,51103,Köln Kalk,Johann-Classen-Str.,25
+1001236,200,0,200,81549,München Obergiesing-Fasangarten,Chiemgaustraße,18
+1001249,210,0,210,69120,Heidelberg Neuenheim,Keplerstraße,12
+1001255,181,120,61,4317,Leipzig Reudnitz-Thonberg,Oststraße,22
+1001277,385,55,330,64720,Miltenberg Michelstadt,innenstadt,20
+1001280,325,0,325,53115,Bonn Poppelsdorf,Reuterstr.,22
+1001291,295,70,225,10243,Berlin Friedrichshain,Warschauerstr.,30
+1001296,228,63,165,79104,Freiburg im Breisgau Herdern,Hauptstrasse,11
+1001305,203,75,128,27367,Bremen Hassendorf,Worthstr.:,25
+1001337,295,0,295,21335,Lüneburg Altstadt,Frommestrasse,16
+1001342,198,55,143,18057,Rostock KTV,Hansastraße,15
+1001359,400,50,350,60487,Frankfurt am Main Bockenheim,Falkstr.,17
+1001367,264,50,214,10317,Berlin Lichtenberg,irenenstrasse,18
+1001372,400,50,350,60487,Frankfurt am Main Bockenheim,Falkstr.,17
+1001349,280,50,230,1099,Dresden Neustadt,görlitzerstr./kunsthof,15
+1001393,265,55,210,69123,Heidelberg Pfaffengrund,Pfaffengrundstraße,26
+1001409,207,20,187,7743,Jena Jena-Stadt,Westendstr.,14
+1001417,340,70,270,80636,München Neuhausen-Nymphenburg,Blutenburgstr.,13
+1001421,250,55,195,31135,Hildesheim Oststadt,Moltkestr.,20
+1001431,265,20,245,40699,Düsseldorf Erkrath,dechenstr,15
+1001445,230,0,230,13088,Berlin Weißensee,Neumagener Str.,16
+1001449,370,50,320,51105,Köln Humboldt/Gremberg,Rolshoverstr.,12
+1001438,175,47,128,37083,Göttingen Südstadt,Geismarlandstr.,15
+1001455,255,46,209,79110,Freiburg im Breisgau Mooswald,Schillhof,16
+1001461,287,60,227,96450,Coburg Zentrum,Steingasse,16
+1001488,181,0,181,4317,Leipzig Reudnitz-Thonberg,Oststraße,22
+1001493,239,33,206,48143,Münster Kuhviertel,Frauenstr.,13
+1001494,300,0,300,68167,Mannheim Neckarstadt Ost,Eichendorffstraße,16
+1001480,280,10,270,49080,Osnabrück Wüste,Schnatgang,15
+1001482,300,30,270,10435,Berlin Prenzlauer Berg,Knaackstr.,26
+1001513,397,0,397,6020,nnsbruck ,Fürstenweg,16
+1001514,350,0,350,1020,ien zentrumsnähe,scherzergasse,25
+1001516,330,0,330,80797,München Schwabing-West,Winzererstraße,15
+1001522,178,52,126,4103,Leipzig Zentrum,Goldschmidtstraße,16
+1001523,310,90,220,64289,Darmstadt Kranichstein,Siemensstr.,17
+1001526,380,30,350,70173,Stuttgart Mitte,Hauptstätterstr.,25
+1001529,220,40,180,72074,Tübingen Lustnau,Gartenstraße,16
+1001530,158,0,158,55122,Mainz Gonsenheim,Canisiusstrasse,40
+1001533,190,60,130,37603,Holzminden ,Sohnreystraße,15
+1001561,240,0,240,6108,Halle (Saale) Zentrum,Graseweg,36
+1001562,275,0,275,93055,Regensburg Ostenviertel,Babostrasse,14
+1001566,242,20,222,55116,Mainz Mainz,Gaustr.,11
+1001569,220,0,220,4315,Leipzig Reudnitz-Thonberg,Lilienstr.,20
+1001572,200,40,160,1307,Dresden Johannstadt,Käthe-Kollwitz-Ufer,19
+1001573,100,0,100,13359,Berlin Wedding,biesentalerstrasse,30
+1001591,289,20,269,14471,Potsdam Potsdam West,Zeppelinstr.,28
+1001592,360,40,320,50674,Köln Altstadt-Nord,Utrechter Str.,18
+1001595,195,40,155,38118,Braunschweig Innenstadt,Sophienstr.,18
+1001608,373,80,293,10551,Berlin Tiergarten,Turmstr,30
+1001620,300,0,300,79106,Freiburg im Breisgau Stadt,Lehenerstr.,20
+1001593,314,80,234,28195,Bremen Mitte,Bürgermeister-Smidt-Straße,22
+1001622,540,90,450,80637,München Neuhausen-Nymphenburg,beim Rot-Kreuz-Platz,23
+1001623,190,0,190,64289,Darmstadt Martinsviertel,Rhoering,14
+1001632,225,64,161,38118,Braunschweig Braunschweig,Melanchthonstraße,14
+1001635,330,40,290,80687,München Schwanthalerhöhe,Schedelstr,15
+1001639,170,0,170,69126,Heidelberg Rohrbach,Rohrbacherstr.,10
+1001664,150,50,100,4159,Leipzig Leipzig Nordwest,Am Eselshaus,10
+1001673,255,35,220,35390,Gießen Innenstadt,Kirchenplatz,14
+1001676,250,50,200,15366,Berlin Hönow,Wildwechsel,15
+1001680,295,70,225,10243,Berlin Friedrichshain,Warschauerstr.,30
+1001693,280,30,250,79100,Freiburg im Breisgau Zähringen,Tullastr.,22
+1001702,260,75,185,97084,Würzburg Heidingsfeld,Sterntalerweg,20
+1001708,192,30,162,7743,Jena Jena-Stadt,Herderstr.,10
+1001714,300,70,230,10405,Berlin Prenzlauer Berg,Greifswalder Str.,24
+1001721,210,0,210,72074,Tübingen Lustnau,haldenstrasse,16
+1001725,320,95,225,65183,Wiesbaden Westend,Hermannstraße,19
+1001741,520,70,450,81379,München Thalkirchen-Obersendling-Forstenried-Fürstenried-Solln,Alfred-Schmidt-Str.,16
+1001743,240,20,220,10961,Berlin Kreuzberg,zossener str.,155
+1001752,310,50,260,10961,Berlin Kreuzberg,Zossenerstr.,28
+1001768,237,77,160,88212,Ravensburg KNOLLENGRABEN,Knollengraben,12
+1001782,240,50,190,54290,Trier Innenstadt,Oerenstraße,18
+1001801,320,0,320,72072,Tübingen franz. Viertel,Mirabeauweg,20
+1001808,500,0,500,70178,Stuttgart West,"Augustenstraße ,Hinterhaus",20
+1001816,326,70,256,70197,Stuttgart West,rotenwaldstr.,17
+1001818,401,70,331,70197,Stuttgart West,Rotenwaldstr,24
+1001824,210,40,170,58452,Witten/Herdecke zentrum,bahnhofstr.,17
+1001844,270,0,270,28203,Bremen Steintor,Bernhardstr.,14
+1001853,330,0,330,50858,Köln Weiden,Königsbergerstr.,18
+1001854,300,0,300,10777,Berlin Schöneberg,Motzstr.,25
+1001861,260,0,260,70599,"Stuttgart ´Hohenheim,Möhringen,Birkach,Vaihingen",Allgäustr,12
+1001877,250,0,250,54290,Trier Innenstadt,Walramsneustraße,18
+1001903,240,30,210,22083,Hamburg Barmbek-Süd,weberstr.,11
+1001908,186,0,186,4275,Leipzig Südvorstadt,Kurt-Eisner-Str.,15
+1001928,200,50,150,49084,Osnabrück Fledder,Meller Straße,15
+1001954,345,65,280,73779,Esslingen am Neckar deizisau,schmale str.,17
+1001955,205,45,160,4107,Leipzig Südvorstadt,Riemannstraße,25
+1001966,147,37,110,6110,Halle (Saale) Südliche Innenstadt,Jacobstraße,11
+1001936,245,0,245,10243,Berlin Friedrichshain,Revaler Str.,22
+1001942,220,0,220,30173,Hannover Südstadt / Bult,Bischofsholer Damm,16
+1001958,249,53,196,35396,Gießen Giessen,Marburger Straße,18
+1001968,275,0,275,24944,Flensburg Mürwik,Wasserlooser Weg,14
+1001972,247,0,247,6114,Halle (Saale) Paulusviertel,Wielandstraße,25
+1001986,208,0,208,99085,Erfurt Krämpfervorstadt,Carmerstr.,14
+1002004,130,0,130,7747,Jena Jena-Lobeda,Stauffenberg str.,11
+1002013,185,0,185,39104,Magdeburg Altstadt,Walther Rathenau Str.,19
+1001987,210,50,160,12529,Berlin Schönefeld,Brunhildstr.,12
+1001996,250,0,250,96049,Bamberg Gaustadt,Anna-Linder-Platz,12
+1001997,247,47,200,18057,Rostock Kröpeliner Tor Vorstadt,Friedrichstr.,13
+1002009,225,45,180,12049,Berlin Kreuzberg,Wissmannstr.,25
+1002030,350,50,300,22301,Hamburg Winterhude,maria louisen strasse,25
+1002048,284,73,211,55116,Mainz Innenstadt,Hintere Bleiche,17
+1002052,179,34,145,34127,Kassel UNI-Nähe,Quellhofstrasse,22
+1002060,290,0,290,1150,issabon Anjos,Rua dos Anjos n,14
+1002063,400,40,360,81549,München Obergiesing-Fasangarten,Schloß-Berg-Str.,16
+1002051,350,0,350,14471,Potsdam Potsdam West,Feuerbachstr.,33
+1002056,110,0,110,4317,Leipzig Reudnitz-Thonberg,Holsteinstraße,15
+1002061,405,80,325,81675,München Au-Haidhausen,Flurstraße,15
+1002067,296,54,242,17489,Greifswald Innenstadt,Hunnenstraße,16
+1002083,295,35,260,50823,Köln Neuehrenfeld,Methweg,13
+1002119,305,75,230,10247,Berlin Friedrichshain,proskauerstr,25
+1002124,170,27,143,6114,Halle (Saale) Giebichenstein,Wittekindstr.,26
+1002128,270,0,270,48151,Münster Centrum,Hoppendamm,16
+1002131,220,70,150,66121,Saarbrücken St Johann,mainzerstr.,25
+1002138,147,11,136,4275,Leipzig Südvorstadt,Arthur-Hoffmann-Str.,13
+1002112,255,65,190,28203,Bremen Ostertor,Bismarckstraße,12
+1002113,270,80,190,97070,Würzburg Altstadt,Innerer Graben,18
+1002142,250,55,195,37073,Göttingen Innenstadt,Lange-Geismar-Straße,16
+1002145,320,20,300,69115,Heidelberg Weststadt,Zähringerstraße,15
+1002148,360,0,360,81543,München Untergiesing-Harlaching,Oefelestraße,16
+1002150,345,45,300,1020,ien ,max winter platz,20
+1002167,255,95,160,79114,Freiburg im Breisgau Haslach/Weingarten,Laufener Str.,13
+1002175,300,80,220,10245,Berlin Friedrichshain,Boxhagener Straße,23
+1002185,398,28,370,6020,nnsbruck Zentrum,Museumstrasse,25
+1002196,400,50,350,70173,Stuttgart Mitte,nadlerstrasse,25
+1002199,237,0,237,24118,Kiel Ravensberg,Olshausenstr.,15
+1002211,480,100,380,63065,Offenbach am Main Offenbach am Main,Kaiserstr.,30
+1002212,210,85,125,24107,Kiel Suchsdorf,Amrumring,24
+1002191,232,20,212,21335,Lüneburg Zentrum,Reichenbachstraße,12
+1002192,288,0,288,50825,Köln Ehrenfeld,Subbelrather Str.,14
+1002217,200,50,150,86150,Augsburg Hauptbahnhof,Victoriastraße,11
+1002220,250,0,250,30175,Hannover Zoo,Schackstr.,16
+1002228,330,30,300,79100,Freiburg im Breisgau Stadt,Schwarzwaldstrasse,18
+1002251,379,72,307,67126,Ludwigshafen am Rhein Hochdorf-Assenheim,Hauptstrasse,14
+1002253,300,0,300,74074,Heilbronn Heilbronn,Herbert-Hoover-Str.,16
+1002275,220,40,180,55130,Mainz Laubenheim,Am Jungstück,12
+1002280,230,15,215,69221,Heidelberg Dossenheim,Schwabenheimerstrasse,16
+1002290,322,1,321,50672,Köln Belgisches Viertel,Gilbachstr.,25
+1002292,300,60,240,6020,nnsbruck st.nikolaus,innstraße,14
+1002303,194,0,194,48149,Münster Centrum,Rudolf-Harbig-Weg,16
+1002312,395,85,310,53127,Bonn Lengsdorf,Provinzialstr.,17
+1002265,130,0,130,17041,Greifswald Greifswald,maxim-gorki str.,7
+1002328,318,68,250,69123,Heidelberg Wieblingen,Adlerstraße,20
+1002334,228,60,168,1097,Dresden Hechtviertel,Rudolf-Leonhardstr.,15
+1002335,250,40,210,10827,Berlin Schöneberg,Kolonnenstr.,19
+1002343,365,0,365,22085,Hamburg Uhlenhorst,winterhuder weg,20
+1002348,350,50,300,69117,Heidelberg Altstadt,klingenteichstr.,25
+1002353,300,25,275,51103,Köln Kalk,Bertramstr.,14
+1002357,240,40,200,96052,Bamberg Ost,Pödeldorfer. Str.,17
+1002371,400,100,300,76829,Landau in der Pfalz Mitte,Quartier Chopin,15
+1002378,330,0,330,22303,Hamburg Winterhude,borgweg,25
+1002388,280,60,220,35396,Gießen Zentrum/Wieseck,Troppauerstraße,15
+1002389,325,90,235,21335,Lüneburg Rotes Feld,Volgerstr.,24
+1002386,223,53,170,6108,Halle (Saale) Innenstadt,Scharrenstraße,18
+1002399,220,60,160,1082,udapest Zentrum - VIII. Bezirk,Üllöi ut,15
+1002401,268,56,212,33100,Paderborn Kernstadt,Fechtelerstr.,23
+1002402,220,0,220,69221,Heidelberg Dossenheim,Hauptstr.,15
+1002405,260,60,200,1082,udapest VIII Bezirk,Üllöi ut,18
+1002408,220,30,190,69221,Heidelberg Dossenheim,Hauptstraße,13
+1002429,189,20,169,39108,Magdeburg Stadtfeld Ost,Wilhelm-Kobelt-Str.,20
+1002430,200,0,200,6114,Halle (Saale) ,Reilstr.,20
+1002432,280,0,280,12047,Berlin Neukölln,sprembergerst.,22
+1002436,230,40,190,86152,Augsburg Innenstadt,Oberer Graben,12
+1002447,290,0,290,21339,Lüneburg Lüneburg,Schomakerstrasse,14
+1002449,390,60,330,70190,Stuttgart Ost,Neckartstr.,20
+1002452,195,0,195,28359,Bremen Horn,Vorstr.,16
+1002544,200,50,150,79211,Freiburg im Breisgau DENZLINGEN,Hachbergerstr.,9
+1002548,350,40,310,50823,Köln Ehrenfeld,barthelstrasse,21
+1002580,287,62,225,28195,Bremen Mitte,Doventorsdeich,15
+1002581,340,20,320,79098,Freiburg im Breisgau Innenstadt,Adelhauserstraße,22
+1002605,265,0,265,50668,Köln Altstadt-Nord,Turiner Str.,19
+1002611,400,50,350,13357,Berlin Wedding,Gottschedstr.,45
+1002627,250,0,250,79104,Freiburg im Breisgau Herdern,Richard-Wagner-Str.,20
+1002631,185,0,185,4275,Leipzig Südvorstadt,Kurt-Eisner-Str.,16
+1002606,255,48,207,91080,Erlangen Uttenreuth,Esperstraße,18
+1002612,275,85,190,21339,Lüneburg Lüneburg,Leipziger Str.,18
+1002616,175,45,130,4275,Leipzig Südvorstadt,Kurt-Eisner-Straße,12
+1002647,235,40,195,72622,Nürtingen Am Lerchenberg,Eschenweg,14
+1002648,213,50,163,6110,Halle (Saale) Südliche Innenstadt,Streiberstraße,22
+1002651,275,60,215,48155,Münster Hafen,Papenburgerstr.,17
+1002672,188,0,188,69120,Heidelberg Neuenheimer Feld,Im Neuenheimer Feld,13
+1002676,245,15,230,97080,Würzburg Grombühl,Petrinistraße,13
+1002663,279,0,279,10829,Berlin Schöneberg,Kolonnenstr.,24
+1002687,250,30,220,1127,Dresden Pieschen,Oschatzerstr.,14
+1002691,364,97,267,55263,Mainz Wackernheim,Im Schneckenbangert,16
+1002693,340,58,282,76829,Landau in der Pfalz Wollmesheimer Höhe,Schlettstadter Str.,19
+1002712,220,30,190,76829,Landau in der Pfalz zentrum,ostbahnstr.,16
+1002717,400,75,325,60385,Frankfurt am Main Bornheim,freiligrathstraße,17
+1002722,315,50,265,22457,Hamburg Schnelsen,Riwka-Herszberg-Stieg,17
+1002731,220,0,220,79114,Freiburg im Breisgau Weingarten,Krozinger Str.,14
+1002732,280,0,280,97074,Würzburg Frauenland,Anton-Bruckner-Str.,12
+1002740,185,60,125,1277,Dresden Striesen,Schlüterstr.,16
+1002756,352,42,310,80339,München Schwanthalerhöhe,Bergmannstr.,17
+1002758,220,40,180,49074,Osnabrück Innenstadt,Nonnenpfad,18
+1002767,300,0,300,61440,Oberursel (Taunus) ,philipp-reis.str.,19
+1002769,222,62,160,12045,Berlin Neukölln,Weserstraße,15
+1002781,156,0,156,24105,Kiel Düsternbrook,"",16
+1002786,275,50,225,13357,Berlin Wedding,Bastianstr.,20
+1002787,170,35,135,18146,Rostock Dierkow,Bruno-Taut-Straße,12
+1002809,195,0,195,33098,Paderborn Kernstadt,Ludwigstr.,16
+1002815,313,0,313,79110,Freiburg im Breisgau Stadt,hofackerstr.,18
+1002819,290,50,240,48161,Münster Gievenbeck,Möllmannsweg,17
+1002836,328,0,328,64289,Darmstadt Darmstadt,Mollerstr.,14
+1002842,70,20,50,4229,Leipzig Schleußig,Könneritzstraße,10
+1002850,220,20,200,37073,Göttingen Innenstadt,Barfüßerstraße,20
+1002859,380,30,350,60486,Frankfurt am Main Bockenheim,Hermann-Wendel-Str.,18
+1002841,269,0,269,69115,Heidelberg Bergheim,Blücherstr.,11
+5708520,235,55,180,21339,Lüneburg Lüneburg,Vor dem Bardowicker Tore,12
+1002877,180,0,180,9648,Mittweida Mittweida,Lutherstraße,18
+1002878,285,0,285,90489,Nürnberg Wöhrd,Bartholomäusstraße,18
+1002900,380,20,360,81667,München Au-Haidhausen,Elsässer Str.,30
+1002902,260,10,250,79104,Freiburg im Breisgau Innenstadt,Ludwigstrasse,16
+1002899,276,0,276,12047,Berlin Neukölln,Plügerstrasse,21
+1002911,205,20,185,96052,Bamberg nähe Bahnhof,Hallstadterstraße,12
+1002917,200,50,150,35390,Gießen ,Seltersweg,12
+1002922,320,50,270,69115,Heidelberg Weststadt,Im Sand,14
+1002928,360,35,325,80687,München Laim,Landsberger Str.,15
+1002950,345,43,302,54290,Trier Innenstadt,Walramsneustr,26
+1002958,180,0,180,69120,Heidelberg Neuenheim,Im Neuenheimer Feld,13
+1002962,190,25,165,9126,Chemnitz Zentrum,Turnstraße,18
+1002964,290,0,290,48147,Münster Nord,Cheruskerring,16
+1002972,300,0,300,51465,Köln Bergisch-Gladbach,Hauptstrasse,12
+1002986,317,50,267,22765,Hamburg Altona-Nord,harkortstr.,16
+1002987,242,50,192,52064,Aachen Aachen,Weberstr.,15
+1002989,300,0,300,51465,Bergisch Gladbach Gladbach,Hauptstrasse,12
+1002960,365,65,300,81543,München AU-Untergiesing,Sommerstraße,12
+1002993,360,80,280,76829,Landau in der Pfalz Zentrum,Pestalozzistraße,30
+1002995,320,45,275,26122,Oldenburg Innenstadt,Lindenallee,28
+1003018,125,27,98,1170,ien Hernals,Jörger Straße,24
+1003019,395,0,395,20144,Hamburg Harvestehude,Schlankreye,20
+1003020,210,40,170,86153,Augsburg Innenstadt,heinrich-von-buz strasse,14
+1002976,270,35,235,13349,Berlin Wedding,Müllerstr.,23
+1003022,191,72,119,17491,Greifswald Schönwalde II,Koitenhäger Landstraße,14
+1003026,140,27,113,6406,Bernburg (Saale) Strenzfeld,Kastanienweg,12
+1003049,200,0,200,4317,Leipzig Reudnitz-Thonberg,Augustenstr.,16
+1003072,240,40,200,44135,Dortmund Mitte,kronprinzenstraße,12
+1003077,250,60,190,10437,Berlin Prenzlauer Berg,Dunckerstraße,14
+1003085,247,67,180,38106,Braunschweig Östliches Ringgebet,Hagenring,14
+1003033,280,80,200,64285,Darmstadt Darmstadt,Paul-Wagner-Straße,13
+1003040,350,40,310,10999,Berlin Kreuzberg,Reichenberger Str.,22
+1003120,350,150,200,10437,Berlin Prenzlauer Berg,Gleimstraße,30
+1003133,184,0,184,50354,Hürth Efferen,Hahnenstr,17
+1003135,173,30,143,93053,Regensburg Galgenberg,Friedenstr.,10
+1003144,240,0,240,69126,Heidelberg Südstadt,Schwindstr.,15
+1003150,340,40,300,50674,Köln Belgisches Viertel,Bruesseler Platz,18
+1003166,235,35,200,24116,Kiel Schreventeich,Eckernförderstr.,18
+1003175,266,26,240,81927,München Arabellapark,Evastr.,13
+1003176,220,60,160,1069,Dresden Südvorstadt,Helmholtzstr.,25
+1003145,470,0,470,80997,München Moosach,Puchheimer Str.,20
+1003177,205,70,135,10967,Berlin Kreuzberg,Kottbusser Damm,13
+1003179,190,55,135,4317,Leipzig Reudnitz-Thonberg,Robert-Volkmann-Strasse,11
+1003181,171,41,130,4275,Leipzig Südvorstadt,"Karl-Liebknecht Straße,",13
+1003191,190,50,140,33100,Paderborn Liedth,Peckelsheimer Weg,13
+1003212,180,60,120,7747,Jena Lobeda Ost,Salvador Allende Platz,11
+1003220,245,43,202,94034,Passau Ilzstadt,Löwenmühlstraße,32
+1003227,260,10,250,70599,"Stuttgart Hohenheim, Möhringen, Vaihingen",Allgäustr.,12
+1003240,429,130,299,14057,Berlin Charlottenburg,Königin-Elisabeth-Straße,15
+1003262,192,55,137,6114,Halle (Saale) Paulusviertel,Uhlandstrasse,15
+1003272,360,65,295,69120,Heidelberg Neuenheim,Mönchhofstr.,16
+1003293,350,110,240,10247,Berlin Friedrichshain,Proskauer,30
+1003300,210,40,170,18057,Rostock Kröpeliner Tor Vorstadt,Patriotischer Weg,15
+1003248,160,30,130,4229,Leipzig Schleußig,Schnorrstraße,25
+1003273,350,0,350,81377,München Hadern,Heiglhofstr.,14
+1003305,256,0,256,28201,Bremen Neustadt,Buntentorsteinweg,12
+1003314,223,0,223,17036,Neubrandenburg Oststadt,Otto-Lilienthal-Str.,10
+1003324,270,70,200,21335,Lüneburg Zentrum,Heiligengeiststr.a,20
+1003334,220,0,220,94032,Passau Altstadt,Gabelbergerstraße,26
+1003344,112,0,112,39112,Magdeburg sudenburg,Wolfenbüttler Straße,13
+1003357,130,10,120,60318,Frankfurt am Main Nordend-West,Händelstr.,14
+1003369,200,45,155,26723,Emden Wybelsum,Kloster-Langen-Straße,32
+1003340,420,60,360,44791,Bochum Grumme,Erbhof,38
+1003371,284,84,200,69117,Heidelberg Altstadt,krämergasse,12
+1003380,235,0,235,12049,Berlin Neukölln,Selchowerstraße,15
+1003386,450,0,450,81373,München Sendling,Pfeuferstraße,22
+1003395,295,100,195,1099,Dresden Neustadt,Prießnitzstraße,18
+1003400,325,25,300,1100,issabon Alfama,Calcada de Sao Vicente n,17
+1003404,280,50,230,80637,München Neuhausen-Nymphenburg,Ebenauer Str.,11
+1003412,240,20,220,10439,Berlin Prenzlauer Berg,Zelter Straße,22
+1003421,393,40,353,17489,Greifswald Greifswald,Arndtstr.,18
+1003424,290,90,200,75173,Pforzheim Südstadt,Vogesenallee,40
+1003428,300,90,210,75173,Pforzheim Südstadt,Vogesenallee,42
+1003429,300,0,300,10999,Berlin Kreuzberg,Admiralstraße,15
+1003431,215,25,190,37073,Göttingen Südstadt,Brauweg,30
+1003438,300,0,300,12047,Berlin Kreuzberg/Neukölln,Pannierstrasse,21
+1003450,300,50,250,10823,Berlin Schöneberg,Akazienstr.,38
+1003422,246,30,216,4275,Leipzig Südvorstadt,Lößnigerstr.,20
+1003444,399,69,330,70597,Stuttgart Süd,Kauzenhecke,21
+1003446,315,20,295,50933,Köln Müngersdorf,Am Ackerrain,12
+1003466,195,50,145,4107,Leipzig Zentrum-Süd,Paul-Gruner-Str.,20
+1003469,220,0,220,45141,Essen Nord,Niederstrasse,14
+1003476,150,0,150,95444,Bayreuth Birken,Frankengutstr.,15
+1003477,260,25,235,59494,Soest zentrum,Freiligrathwall,15
+1003478,200,0,200,23943,Flensburg Jürgensby,Auf der Dorfkoppel,15
+1003480,370,20,350,63303,Offenbach am Main Dreich-Sprendlingen,lieb****Str.**,20
+1003485,260,40,220,7749,Jena Jena-Ost,Karl-Liebknecht-Straße,22
+1003475,242,69,173,69115,Heidelberg Weststadt,Bahnhofstr,12
+1003487,285,0,285,14471,Potsdam Potsdam West,Geschwister-Scholl-Straße,24
+1003499,315,15,300,22303,Hamburg Winterhude,wiesendamm,25
+1003500,310,50,260,48145,Münster Centrum,Gereonstrasse,16
+1003513,250,0,250,94034,Passau Ilzstadt,Löwenmühlstr.,20
+1003531,372,50,322,81929,München Bogenhausen,Eggenfeldenerstraße,18
+1003537,220,72,148,26725,Emden Stadtzentrum,Marttin Faber Str.,22
+1003548,270,30,240,48149,Münster Centrumsnah,Philippistr.,12
+1003554,169,55,114,7747,Jena Jena-Lobeda,Hans-Berger-Straße,14
+1003555,350,0,350,79249,Freiburg im Breisgau Merzhausen (Ecke Vauban),Im Laimacker,20
+1003567,230,35,195,86153,Augsburg Innenstadt,Heinrich-von-Buz Strasse,14
+1003571,285,80,205,97074,Würzburg Frauenland,Gegenbaurstr.,15
+1003514,240,0,240,4107,Leipzig Zentrum-Süd,Riemannstr.,25
+1003557,216,0,216,79110,Freiburg im Breisgau Seepark,Sundgaualle,12
+1003572,280,50,230,76135,Karlsruhe Innenstadt-West,draisstr.,18
+1003581,210,80,130,4107,Leipzig Zentrum-Süd,Harkortstrasse,25
+1003587,250,0,250,50825,Köln Neuehrenfeld,Franz-Liszt-Straße,18
+1003594,400,0,400,97072,Würzburg Sanderau,franz-ludwig-strasse,22
+1003600,200,0,200,79100,Freiburg im Breisgau Unterwiehre,Oltmannsstr.,15
+1003609,300,40,260,10247,Berlin Friedrichshain,Rigaer,25
+1003610,270,60,210,4277,Leipzig Connewitz,Simildenstr.,30
+1003642,190,35,155,97082,Würzburg Zellerau,Fröhlichstraße,12
+1003592,141,0,141,26121,Oldenburg Bürgerfelde,Alexanderstraße,10
+1003655,300,70,230,72070,Tübingen Innenstadt,Neckarhalde,19
+1003656,381,71,310,10827,Berlin Schöneberg,Ebersstrasse,33
+1003663,200,50,150,4317,Leipzig Reudnitz-Thonberg,Lipsiusstraße,20
+1003691,169,60,109,69221,Heidelberg Dossenheim,Ortsstraße,14
+1003701,356,71,285,10827,Berlin Schöneberg,Ebersstrasse,26
+1003705,230,0,230,89075,Ulm Mitte,Frauensteige,15
+1003706,280,40,240,20099,Hamburg St Georg,Alexanderstr.,12
+1003707,215,0,215,72070,Tübingen Weststadt,Im Buckenloh,13
+1003710,295,0,295,50939,Köln Sülz,Gottesweg,19
+1003659,253,62,191,90439,Nürnberg St Leonhard,Rothenburger Str.,15
+1003684,210,0,210,99089,Erfurt Andreasvorstadt,Gerberstraße,20
+1003702,229,0,229,4157,Leipzig Gohlis-Mitte,Hoepnerstr.,21
+1003712,165,45,120,9126,Chemnitz Lutherviertel,Charlottenstraße,16
+1003715,200,30,170,14469,Potsdam potzdam nord,nedlitzerstr,12
+1003724,278,70,208,93051,Regensburg Königswiesen-Dechbetten-Großprüfening,Königswiesenweg,11
+1003726,316,36,280,10779,Berlin Wilmersdorf/Schöneberg,Aschaffenburger Str.,34
+1003750,281,81,200,10961,Berlin Kreuzberg,Gneisenaustr.,25
+1003751,130,40,90,4229,Leipzig Plagwitz,Zschochersche Straße,13
+1003754,220,0,220,72070,Tübingen Weststadt,Stöcklestraße,11
+1003760,270,60,210,48149,Münster Centrum,schulstraße,20
+1003772,310,30,280,28199,Bremen City,Bürgermeister-Smidt-Straße,18

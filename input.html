@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+</head>
+<body>
+    <h1>Test</h1>
+
+    <textarea>Dies ist ein Test
+    </textarea>
+
+    <script>
+        function requestForPrice() {
+            fetch("/", {
+              method: "POST",
+              headers: {'Content-Type': 'application/json'},
+              body: {
+                  test: 3
+              }
+            }).then(res => {
+              console.log("Request complete! response:", res);
+            });
+        }
+        requestForPrice();
+    </script>
+</body>
+</html>
