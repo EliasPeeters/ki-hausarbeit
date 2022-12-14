@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 
 from time import time
 from sklearn.svm import SVR
@@ -9,6 +9,7 @@ from sklearn.metrics import fbeta_score
 from sklearn.metrics import accuracy_score
 from colorama import Fore, Back, Style
 from http.server import BaseHTTPRequestHandler, HTTPServer
+import matplotlib.pyplot as plt
 
 import warnings
 
@@ -17,7 +18,9 @@ warnings.simplefilter(action='ignore', category=pd.errors.PerformanceWarning)
 
 def read_data():
     # Use a breakpoint in the code line below to debug your script.
-    file_name = 'allData.csv'
+    # file_name = 'allData.csv'
+    file_name = 'dataNormalized.csv'
+    file_name = 'allNormalizedDifference.csv'
     print(Fore.GREEN + 'Reading data from file: ' + file_name)
 
     data = pd.read_csv(file_name)
@@ -30,6 +33,9 @@ def storePriceSeperate(data):
     data.loc[(data.price <= 19), 'price'] = 0
 
     data.loc[(data.price == 24), 'price'] = 1
+    # 
+    # data.loc[(data.price > 0), 'price'] = 1
+    # data.loc[(data.price < 0), 'price'] = 0
 
     price_raw = data['price']
     features_raw = data.drop('price', axis=1)
@@ -74,7 +80,13 @@ def preProcessData(data):
     word_list = ["balkon", "trockner", "garage", "jura", "garten"]
     for word in word_list:
         data['word_' + word] = data['description'].str.contains(word).astype(int)
+
+    # add description length
     # data['text_length'] = data['description'].str.len()
+
+    # count capital words in description
+    data['capital_words'] = data['description'].str.findall(r'[A-Z]{2,}').str.len()
+
 
     # data['word_balkon'] = data['description'].str.contains('balkon').astype(int)
     # data['word_trockner'] = data['description'].str.contains('trockner').astype(int)
@@ -97,7 +109,9 @@ def splitData(price_raw, features_raw):
 
 
 def train_model(X_train, y_train):
-    model = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
+    # model = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
+    # model = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)
+    model = DecisionTreeClassifier(random_state=42)
     # model = SVR(verbose=True, n_jobs=3)
 
     start = time()  # Get start time
@@ -121,6 +135,32 @@ def test_model(model, X_test, y_test):
     print(results)
 
 
+def visualize_feature_importance(model, data_for_names):
+    importance = model.feature_importances_
+    col_names = []
+    # summarize feature importance
+    for col in data_for_names.columns:
+        col_names.append(col)
+        # print(col)
+
+    # plot feature importance
+    # pyplot.bar([x for x in range(len(importance))], importance)
+    # pyplot.show()
+
+    names = ['group_a', 'group_b', 'group_c']
+    values = [1, 10, 100]
+
+    names = col_names
+    values = importance
+
+
+    plt.figure(figsize=(9, 3))
+    # plt.subplot(131)
+    plt.bar(names, values)
+    plt.suptitle('Categorical Plotting')
+    plt.show()
+
+
 
 if __name__ == '__main__':
     data = read_data()
@@ -142,6 +182,12 @@ if __name__ == '__main__':
     X_train, X_test, y_train, y_test = splitData(price_raw, features_raw)
     model = train_model(X_train, y_train)
     print('finished training')
+
+    test_model(model, X_test, y_test)
+    print('finished testing')
+
+    visualize_feature_importance(model, X_train)
+    print('finished visualizing')
 
     # HTTPServer((hostName, serverPort), HandleRequests).serve_forever()
     # print("Server started http://%s:%s" % (hostName, serverPort))
