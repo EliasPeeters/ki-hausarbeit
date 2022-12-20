@@ -1,7 +1,8 @@
 RandomForestClassifier {'acc_test': 0.5627181002285523, 'acc_train': 0.5996415590786451, 'fbeta_test': 0.5632918764316868, 'fbeta_train': 0.6010412397018776}
 DecisionTreeClassifier {'acc_test': 0.5598862812865824, 'acc_train': 0.5996833678952884, 'fbeta_test': 0.5591573194649507, 'fbeta_train': 0.6006086018352158}
 Gaussian Naive Bayes {'acc_test': 0.5497965326941301, 'acc_train': 0.5493594889290253, 'fbeta_test': 0.503183179780612, 'fbeta_train': 0.5063220960071529}
-KNearestNeighbors {'acc_test': 0.5392385305758404, 'acc_train': 0.5591093049702321, 'fbeta_test': 0.5338809034907598, 'fbeta_train': 0.5569060786302253}
+KNearestNeighbors {'acc_test': 0.5392385305758404, 'acc_train': 0.5591093049702321, 'fbeta_test': 0.5338809034907598, 'fbeta_train': 0.5569060786302253} k definieren!!!!!
 LogisticRegression {'acc_test': 0.5685155248341602, 'acc_train': 0.5701914286351373, 'fbeta_test': 0.5621110052567184, 'fbeta_train': 0.5663955890167864}
 MLPCLassifier {'acc_test': 0.5709905791850158, 'acc_train': 0.5734330055522109, 'fbeta_test': 0.5765375437449152, 'fbeta_train': 0.5805568645246114}
-ADABOostCLassifier {'acc_test': 0.5710909192262668, 'acc_train': 0.5734469418244252, 'fbeta_test': 0.575779780176255, 'fbeta_train': 0.5798337798331884}
+ADABoostCLassifier {'acc_test': 0.5710909192262668, 'acc_train': 0.5734469418244252, 'fbeta_test': 0.575779780176255, 'fbeta_train': 0.5798337798331884}
+SVM (Laufzeit 3:54 fürs Trainieren) 

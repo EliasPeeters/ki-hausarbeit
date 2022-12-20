@@ -12,6 +12,7 @@ from sklearn.ensemble import AdaBoostClassifier
 
 from time import time
 from sklearn.svm import SVR
+from sklearn.svm import SVC
 from sklearn.metrics import fbeta_score
 from sklearn.metrics import accuracy_score
 from colorama import Fore, Back, Style
@@ -107,7 +108,30 @@ def preProcessData(data):
                    "teurer spaß", "teures vergnügen"]
     data['teuer'] = data['description'].str.contains('|'.join(teuer_words)).astype(int)
 
-    munich_words = ["Allach", "Altstadt", "Am Hart", "Am Moosfeld", "Am Riesenfeld", "Au", "Aubing", "Berg am Laim", "Bogenhausen", "Daglfing", "Denning", "Englschalking", "Fasangarten", "Feldmoching", "Forstenried", "Freiham", "Freimann", "Fürstenried", "Giesing (Obergiesing)", "Giesing (Untergiesing)", "Hadern", "Haidhausen", "Harlaching", "Hasenbergl", "Holzapfelkreuth (Ostteil)", "Holzapfelkreuth (Westteil)", "Isarvorstadt", "Johanneskirchen", "Laim", "Langwied", "Lehel", "Lochhausen", "Ludwigsvorstadt", "Maxvorstadt", "Milbertshofen", "Moosach", "Neuhausen", "Nymphenburg", "Oberföhring", "Obermenzing", "Pasing", "Perlach", "Ramersdorf", "Riem", "Schwabing (Ostteil)", "Schwabing (Westteil)", "Schwanthalerhöhe", "Sendling (Obersendling)", "Sendling (Unter- und Mittersendling)", "Sendling (Westteil)", "Solln", "Steinhausen", "Thalkirchen", "Trudering", "Untermenzing", "Zamdorf"]
+    supermarkt_words = ["aldi", "lidl", "famila", "edeka", "rewe", "marktkauf", "netto", "real", "tegut", "globus",
+                        "norma", "billa", "penny", "kaufland", "spar"]
+    data['supermarkt']=data['description'].str.findall(supermarkt_words).str.len()
+
+    drogerie_words = ["rossmann", "müller", " dm ", "budni"]
+    data['drogerie'] = data['description'].str.findall(drogerie_words).str.len()
+
+    distance_words = ["gehminuten", "entfernt", "entfernung", "zu fuß", "distanz", "meter", "kilometer", "unterwegs"]
+    data['distanz'] = data['description'].str.findall(distance_words).str.len()
+
+    geschaeft_words = ["c&a", "h&m", "new yorker", "peek&cloppenburg", "kik", "takko", "s.oliver", "adler", "nkd",
+                       "zara", "esprit", "tk-maxx", "primark", "tom taylor", "apple store", "saturn", "mediamarkt",
+                       "medimax"]
+    data['geschaeft'] = data['description'].str.findall(geschaeft_words).str.len()
+
+    munich_words = ["Allach", "Altstadt", "Am Hart", "Am Moosfeld", "Am Riesenfeld", "Au", "Aubing", "Berg am Laim",
+                    "Bogenhausen", "Daglfing", "Denning", "Englschalking", "Fasangarten", "Feldmoching", "Forstenried",
+                    "Freiham", "Freimann", "Fürstenried", "Giesing (Obergiesing)", "Giesing (Untergiesing)", "Hadern",
+                    "Haidhausen", "Harlaching", "Hasenbergl", "Holzapfelkreuth (Ostteil)", "Holzapfelkreuth (Westteil)",
+                    "Isarvorstadt", "Johanneskirchen", "Laim", "Langwied", "Lehel", "Lochhausen", "Ludwigsvorstadt",
+                    "Maxvorstadt", "Milbertshofen", "Moosach", "Neuhausen", "Nymphenburg", "Oberföhring", "Obermenzing",
+                    "Pasing", "Perlach", "Ramersdorf", "Riem", "Schwabing (Ostteil)", "Schwabing (Westteil)",
+                    "Schwanthalerhöhe", "Sendling (Obersendling)", "Sendling (Unter- und Mittersendling)",
+                    "Sendling (Westteil)", "Solln", "Steinhausen", "Thalkirchen", "Trudering", "Untermenzing", "Zamdorf"]
     data['munich'] = data['description'].str.contains('|'.join(munich_words)).astype(int)
 
     # get age of user from description when he wrote number + "Jahre"
@@ -140,9 +164,9 @@ def train_model(X_train, y_train):
     # model = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
     # model = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)
     # model = DecisionTreeClassifier(random_state=42)
-    model = SVR(verbose=True)
+    model = SVC(verbose=True)
     # model = GaussianNB()
-    # model = KNeighborsClassifier()
+    model = KNeighborsClassifier()
     # model = LogisticRegression(random_state=42, n_jobs=-1)
     # model = MLPClassifier()
     # model = AdaBoostClassifier(random_state=42, n_estimators=100)
@@ -169,8 +193,8 @@ def test_model(model, X_test, y_test, X_train, y_train):
 
     results['acc_test'] = accuracy_score(y_test_helper, predictions_test)
     results['acc_train'] = accuracy_score(y_train_helper, predictions_train)
-    results['fbeta_test'] = fbeta_score(y_test_helper, predictions_test, beta=0.5)
-    results['fbeta_train'] = fbeta_score(y_train_helper, predictions_train, beta=0.5)
+    results['fbeta_test'] = fbeta_score(y_test_helper, predictions_test, beta=1)
+    results['fbeta_train'] = fbeta_score(y_train_helper, predictions_train, beta=1)
 
     display = PrecisionRecallDisplay.from_estimator(
         model, X_test, y_test_helper, name="LinearSVC"
