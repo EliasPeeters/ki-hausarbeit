@@ -4,6 +4,11 @@ import numpy as np
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.neural_network import MLPClassifier
+from sklearn.ensemble import AdaBoostClassifier
 
 from time import time
 from sklearn.svm import SVR
@@ -32,8 +37,8 @@ def read_data():
 
 
 def storePriceSeperate(data):
-    data.loc[(data.price > 19), 'price'] = 24
-    data.loc[(data.price <= 19), 'price'] = 0
+    data.loc[(data.price > 19.3478), 'price'] = 24
+    data.loc[(data.price <= 19.3478), 'price'] = 0
 
     data.loc[(data.price == 24), 'price'] = 1
 
@@ -54,8 +59,8 @@ def removeUnusedColumns(data):
 
     data = data.drop('description', axis=1)
 
-    # data = data.drop('location_postalCode', axis=1)
-    # data = data.drop('roomSize', axis=1)
+    data = data.drop('location_postalCode', axis=1)
+    data = data.drop('roomSize', axis=1)
     # data = data.drop('errorPercentage', axis=1)
 
     return data
@@ -133,9 +138,15 @@ def splitData(price_raw, features_raw):
 
 def train_model(X_train, y_train):
     # model = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
-    model = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)
+    # model = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)
     # model = DecisionTreeClassifier(random_state=42)
-    # model = SVR(verbose=True, n_jobs=3)
+    model = SVR(verbose=True)
+    # model = GaussianNB()
+    # model = KNeighborsClassifier()
+    # model = LogisticRegression(random_state=42, n_jobs=-1)
+    # model = MLPClassifier()
+    # model = AdaBoostClassifier(random_state=42, n_estimators=100)
+
 
     start = time()  # Get start time
     learner = model.fit(X_train, y_train.astype('int').values.ravel())
