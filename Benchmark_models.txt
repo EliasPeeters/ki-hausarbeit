@@ -19,3 +19,6 @@ Features: alle Textbasierte
 Features: alle
 {'acc_test': 0.7256591783265511, 'acc_train': 0.9984363502575423, 'fbeta_test': 0.7245104734608883, 'fbeta_train': 0.9984357093263512}
 -> plz > roomsize > word_cnt > text_length > ...
+Features: nur Text ohne Metadaten:
+{'acc_test': 0.5733541446011483, 'acc_train': 0.577931634223025, 'fbeta_test': 0.5763158477447355, 'fbeta_train': 0.5827786104743432}
+-> Arbeit > Oepnv >...
