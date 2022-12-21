@@ -25,3 +25,8 @@ Features: nur Text ohne Metadaten:
 Features: nur Text ohne Metadaten + PLZ + qm
 {'acc_test': 0.7494509169964881, 'acc_train': 0.8679593952772761, 'fbeta_test': 0.7426274379559537, 'fbeta_train': 0.8649799492103666}
 alle Textfeatures unter 5%
+
+neuer Test: Länge in Chars und Länge in Wörtern über/unter Median
+alle Features:
+{'acc_test': 0.5724845309103072, 'acc_train': 0.637930073360537, 'fbeta_test': 0.5796132257498684, 'fbeta_train': 0.6449659183461515}
+-> errorP > cap_words > word_cnt, dann einige Text, text_length vorletzter

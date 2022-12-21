@@ -60,13 +60,13 @@ def removeUnusedColumns(data):
 
     data = data.drop('description', axis=1)
 
-    # data = data.drop('location_postalCode', axis=1)
-    # data = data.drop('roomSize', axis=1)
+    data = data.drop('location_postalCode', axis=1)
+    data = data.drop('roomSize', axis=1)
 
-    data = data.drop('errorPercentage', axis=1)
-    data = data.drop('word_cnt', axis=1)
-    data = data.drop('capital_words', axis=1)
-    data = data.drop('text_length', axis=1)
+    # data = data.drop('errorPercentage', axis=1)
+    # data = data.drop('word_cnt', axis=1)
+    # data = data.drop('capital_words', axis=1)
+    # data = data.drop('text_length', axis=1)
 
     # data = data.drop('guenstig', axis=1)
     # data = data.drop('teuer', axis =1)
@@ -100,7 +100,9 @@ def preProcessData(data):
     data['capital_words'] = data['description'].str.findall(r'[A-Z]{2,}').str.len()/data['word_cnt']
     data['capital_words'] = round(data['capital_words'], 2)
 
-    data['word_cnt'] = round(data['word_cnt'] / 10)
+    # data['word_cnt'] = round(data['word_cnt'] / 10)
+    data.loc[(data.word_cnt < 199), 'word_cnt'] = 0
+    data.loc[(data.word_cnt >= 199), 'word_cnt'] = 1
 
 
     # add new column if word is in description
@@ -121,7 +123,10 @@ def preProcessData(data):
 
 
     # add description length
-    data['text_length'] = round(data['description'].str.len() / 100)
+    # data['text_length'] = round(data['description'].str.len()/100)
+    data['text_length'] = round(data['description'].str.len())
+    data.loc[(data.text_length < 1355), 'text_length'] = 0
+    data.loc[(data.text_length >= 1355), 'text_length'] = 1
 
     # round errorPercentage to two digits
     data['errorPercentage'] = round(data['errorPercentage'], 2)
@@ -133,7 +138,7 @@ def preProcessData(data):
                    "kostenaufwändig", "kostenaufwendig", "kostenintensiv", "preisintensiv", "deier", "gepfeffert",
                    "gesalzen", "happig", "ins geld gehen", "ins geld reißen", "Loch in die kasse reißen",
                    "loch ins portmonee reißen", "richtig geld kosten", "saftig", "sich gewaschen haben", "stolz",
-                   "teurer spaß", "teures vergnügen"]
+                   "teurer spaß", "teures vergnügen", "hell", "nobel", "luxuriös"]
     data['teuer'] = data['description'].str.contains('|'.join(teuer_words)).astype(int)
 
     distance_words = ["gehminuten", "entfernt", "entfernung", "zu fuß", "distanz", "meter", "kilometer", "unterwegs",
@@ -150,7 +155,7 @@ def preProcessData(data):
     data['oepnv'] = data['description'].str.contains('|'.join(oepnv_words)).astype(int)
 
     guenstig_words = ["schimmel", "unisoliert", "schlecht isoliert", "altbau", "sozialbau", "sozialwohnung",
-                      "wohnberechtigungsschein", "guenstig", "nicht teuer"]
+                      "wohnberechtigungsschein", "guenstig", "nicht teuer", "dachgeschoss", "norden"]
     data['guenstig'] = data['description'].str.contains('|'.join(guenstig_words)).astype(int)
 
     munich_words = ["Allach", "Altstadt", "Am Hart", "Am Moosfeld", "Am Riesenfeld", "Au", "Aubing", "Berg am Laim",
