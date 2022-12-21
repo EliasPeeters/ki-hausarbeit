@@ -60,8 +60,8 @@ def removeUnusedColumns(data):
 
     data = data.drop('description', axis=1)
 
-    data = data.drop('location_postalCode', axis=1)
-    data = data.drop('roomSize', axis=1)
+    # data = data.drop('location_postalCode', axis=1)
+    # data = data.drop('roomSize', axis=1)
 
     data = data.drop('errorPercentage', axis=1)
     data = data.drop('word_cnt', axis=1)
