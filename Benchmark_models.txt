@@ -5,4 +5,17 @@ KNearestNeighbors {'acc_test': 0.5392385305758404, 'acc_train': 0.55910930497023
 LogisticRegression {'acc_test': 0.5685155248341602, 'acc_train': 0.5701914286351373, 'fbeta_test': 0.5621110052567184, 'fbeta_train': 0.5663955890167864}
 MLPCLassifier {'acc_test': 0.5709905791850158, 'acc_train': 0.5734330055522109, 'fbeta_test': 0.5765375437449152, 'fbeta_train': 0.5805568645246114}
 ADABoostCLassifier {'acc_test': 0.5710909192262668, 'acc_train': 0.5734469418244252, 'fbeta_test': 0.575779780176255, 'fbeta_train': 0.5798337798331884}
-SVM (Laufzeit 3:54 fürs Trainieren) 
+SVM (Laufzeit 3:54 fürs Trainieren)
+
+
+21.12.2022 15:05:00 Uhr
+Neue Tests: RandomForestClassifier
+Features: text_length, capital_words, word_cnt, error_percentage
+{'acc_test': 0.5539996655331958, 'acc_train': 0.6077914910696368, 'fbeta_test': 0.5601829456000703, 'fbeta_train': 0.6151216189973441}
+-> text_length (40%) > word_cnt (21,5%) > error_percentage (21%) > cap_words(16%)
+Features: alle Textbasierte
+{'acc_test': 0.5527955850381849, 'acc_train': 0.78991069636765, 'fbeta_test': 0.5250207223209, 'fbeta_train': 0.7766461512020364}
+-> word_cnt > text_length >...>alle textfeatures
+Features: alle
+{'acc_test': 0.7256591783265511, 'acc_train': 0.9984363502575423, 'fbeta_test': 0.7245104734608883, 'fbeta_train': 0.9984357093263512}
+-> plz > roomsize > word_cnt > text_length > ...

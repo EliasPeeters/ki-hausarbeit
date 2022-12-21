@@ -27,7 +27,7 @@ warnings.simplefilter(action='ignore', category=pd.errors.PerformanceWarning)
 
 def read_data():
     # Use a breakpoint in the code line below to debug your script.
-    file_name = 'Result_8.csv'
+    file_name = 'Result_27.csv'
     # file_name = 'dataNormalized.csv'
     # file_name = 'allNormalizedDifference.csv'
     print(Fore.GREEN + 'Reading data from file: ' + file_name)
@@ -62,7 +62,20 @@ def removeUnusedColumns(data):
 
     data = data.drop('location_postalCode', axis=1)
     data = data.drop('roomSize', axis=1)
+
     # data = data.drop('errorPercentage', axis=1)
+    # data = data.drop('word_cnt', axis=1)
+    # data = data.drop('capital_words', axis=1)
+
+    # data = data.drop('guenstig', axis=1)
+    # data = data.drop('teuer', axis =1)
+    # data = data.drop('oepnv', axis=1)
+    # data = data.drop('distanz', axis=1)
+    # data = data.drop('geschaeft', axis=1)
+    # data = data.drop('ausstattung', axis=1)
+    # data = data.drop('studium', axis=1)
+    # data = data.drop('ausbildung', axis=1)
+    # data = data.drop('arbeit', axis=1)
 
     return data
 
@@ -82,12 +95,29 @@ def custom_hot_encoding(data):
 
 
 def preProcessData(data):
+    # count capital words in description
+    data['capital_words'] = data['description'].str.findall(r'[A-Z]{2,}').str.len()/data['word_cnt']
+    data['capital_words'] = round(data['capital_words'], 2)
+
+    data['word_cnt'] = round(data['word_cnt'] / 10)
+
+
     # add new column if word is in description
     data['description'] = data['description'].str.lower()
 
-    word_list = ["balkon", "trockner", "garage", "jura", "garten", "wein", "vegan", "jura", "bier"]
-    for word in word_list:
-        data['word_' + word] = data['description'].str.contains(word).astype(int)
+    ausstattung_words = ["balkon", "trockner", "garage", "garten", "fernseher", "waschmaschine", "laminat", "parkett"]
+    data['ausstattung'] = data['description'].str.contains('|'.join(ausstattung_words)).astype(int)
+
+    studenten_words = ["studium", "student", "studentin", "jura", "bwl", "studiere", "studiert", "studieren",
+                       "semester", "uni", "universität", "campus"]
+    data['studium'] = data['description'].str.contains('|'.join(studenten_words)).astype(int)
+
+    ausbildung_words = ["ausbildung", "azubi", "auszubildender", "techniker", "berufsschule"]
+    data['ausbildung'] = data['description'].str.contains('|'.join(ausbildung_words)).astype(int)
+
+    arbeit_words = ["vollzeit", "teilzeit", "beruf", "arbeiten", "arbeit", "berufstätig"]
+    data['arbeit'] = data['description'].str.contains('|'.join(arbeit_words)).astype(int)
+
 
     # add description length
     data['text_length'] = round(data['description'].str.len() / 100)
@@ -98,9 +128,6 @@ def preProcessData(data):
     # round plz to three digits
     data['location_postalCode'] = round(data['location_postalCode'] / 100, 0)
 
-    # count capital words in description
-    data['capital_words'] = data['description'].str.findall(r'[A-Z]{2,}').str.len()
-
     teuer_words = ["teuer", "kostenträchti", "viel geld kosten", "hochpreisig", "im oberen preissegment",
                    "kostenaufwändig", "kostenaufwendig", "kostenintensiv", "preisintensiv", "deier", "gepfeffert",
                    "gesalzen", "happig", "ins geld gehen", "ins geld reißen", "Loch in die kasse reißen",
@@ -108,20 +135,22 @@ def preProcessData(data):
                    "teurer spaß", "teures vergnügen"]
     data['teuer'] = data['description'].str.contains('|'.join(teuer_words)).astype(int)
 
-    supermarkt_words = ["aldi", "lidl", "famila", "edeka", "rewe", "marktkauf", "netto", "real", "tegut", "globus",
-                        "norma", "billa", "penny", "kaufland", "spar"]
-    data['supermarkt']=data['description'].str.findall(supermarkt_words).str.len()
-
-    drogerie_words = ["rossmann", "müller", " dm ", "budni"]
-    data['drogerie'] = data['description'].str.findall(drogerie_words).str.len()
-
-    distance_words = ["gehminuten", "entfernt", "entfernung", "zu fuß", "distanz", "meter", "kilometer", "unterwegs"]
-    data['distanz'] = data['description'].str.findall(distance_words).str.len()
+    distance_words = ["gehminuten", "entfernt", "entfernung", "zu fuß", "distanz", "meter", "kilometer", "unterwegs",
+                      "strecke"]
+    data['distanz'] = data['description'].str.contains('|'.join(distance_words)).astype(int)
 
     geschaeft_words = ["c&a", "h&m", "new yorker", "peek&cloppenburg", "kik", "takko", "s.oliver", "adler", "nkd",
                        "zara", "esprit", "tk-maxx", "primark", "tom taylor", "apple store", "saturn", "mediamarkt",
-                       "medimax"]
-    data['geschaeft'] = data['description'].str.findall(geschaeft_words).str.len()
+                       "medimax", "rossmann", "müller", " dm ", "budni", "aldi", "lidl", "famila", "edeka", "rewe",
+                       "marktkauf", "netto", "real", "tegut", "globus", "norma", "billa", "penny", "kaufland", "spar"]
+    data['geschaeft'] = data['description'].str.contains('|'.join(geschaeft_words)).astype(int)
+
+    oepnv_words = ["bahn", "bus", "u-bahn", "ubahn", "s-bahn", "sbahn", "bahnhof", "bhf", "zug", "ice", "hauptbahnhof"]
+    data['oepnv'] = data['description'].str.contains('|'.join(oepnv_words)).astype(int)
+
+    guenstig_words = ["schimmel", "unisoliert", "schlecht isoliert", "altbau", "sozialbau", "sozialwohnung",
+                      "wohnberechtigungsschein", "guenstig", "nicht teuer"]
+    data['guenstig'] = data['description'].str.contains('|'.join(guenstig_words)).astype(int)
 
     munich_words = ["Allach", "Altstadt", "Am Hart", "Am Moosfeld", "Am Riesenfeld", "Au", "Aubing", "Berg am Laim",
                     "Bogenhausen", "Daglfing", "Denning", "Englschalking", "Fasangarten", "Feldmoching", "Forstenried",
@@ -131,14 +160,12 @@ def preProcessData(data):
                     "Maxvorstadt", "Milbertshofen", "Moosach", "Neuhausen", "Nymphenburg", "Oberföhring", "Obermenzing",
                     "Pasing", "Perlach", "Ramersdorf", "Riem", "Schwabing (Ostteil)", "Schwabing (Westteil)",
                     "Schwanthalerhöhe", "Sendling (Obersendling)", "Sendling (Unter- und Mittersendling)",
-                    "Sendling (Westteil)", "Solln", "Steinhausen", "Thalkirchen", "Trudering", "Untermenzing", "Zamdorf"]
-    data['munich'] = data['description'].str.contains('|'.join(munich_words)).astype(int)
+                    "Sendling (Westteil)", "Solln", "Steinhausen", "Thalkirchen", "Trudering", "Untermenzing",
+                    "Zamdorf"]
+    # data['munich'] = data['description'].str.contains('|'.join(munich_words)).astype(int)
 
     # get age of user from description when he wrote number + "Jahre"
     # data['age'] = data['description'].str.findall(r'(\d+)Jahre').str[0].astype(int)
-
-
-
 
     # data['word_balkon'] = data['description'].str.contains('balkon').astype(int)
     # data['word_trockner'] = data['description'].str.contains('trockner').astype(int)
@@ -163,14 +190,13 @@ def splitData(price_raw, features_raw):
 def train_model(X_train, y_train):
     # model = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
     # model = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)
-    # model = DecisionTreeClassifier(random_state=42)
-    model = SVC(verbose=True)
+    model = DecisionTreeClassifier(random_state=42)
+    # model = SVC(verbose=True)
     # model = GaussianNB()
-    model = KNeighborsClassifier()
+    # model = KNeighborsClassifier()
     # model = LogisticRegression(random_state=42, n_jobs=-1)
     # model = MLPClassifier()
     # model = AdaBoostClassifier(random_state=42, n_estimators=100)
-
 
     start = time()  # Get start time
     learner = model.fit(X_train, y_train.astype('int').values.ravel())
