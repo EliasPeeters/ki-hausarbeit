@@ -98,6 +98,7 @@ def custom_hot_encoding(data):
 def preProcessData(data):
     # count capital words in description
     data['capital_words'] = data['description'].str.findall(r'[A-Z]{2,}').str.len()/data['word_cnt']
+    print('Cap Quantiles')
     print(data['capital_words'].quantile(0.25))
     print(data['capital_words'].quantile(0.5))
     print(data['capital_words'].quantile(0.75))
@@ -109,10 +110,14 @@ def preProcessData(data):
     data.loc[(data.capital_words >= 0.021875) & (data.capital_words < 1), 'capital_words'] = 3
 
     # data['word_cnt'] = round(data['word_cnt'] / 10)
-    data.loc[(data.word_cnt < 111), 'word_cnt'] = 0
-    data.loc[(data.word_cnt > 0) & (data.word_cnt < 199), 'word_cnt'] = 1
-    data.loc[(data.word_cnt > 1) & (data.word_cnt < 301), 'word_cnt'] = 2
-    data.loc[(data.word_cnt >= 301), 'word_cnt'] = 3
+    print('Word_cnt Quantiles')
+    print(data['word_cnt'].quantile(0.25))
+    print(data['word_cnt'].quantile(0.5))
+    print(data['word_cnt'].quantile(0.75))
+    data.loc[(data.word_cnt < 109), 'word_cnt'] = 0
+    data.loc[(data.word_cnt > 0) & (data.word_cnt < 198), 'word_cnt'] = 1
+    data.loc[(data.word_cnt > 1) & (data.word_cnt < 300), 'word_cnt'] = 2
+    data.loc[(data.word_cnt >= 300), 'word_cnt'] = 3
 
 
     # add new column if word is in description
@@ -135,18 +140,26 @@ def preProcessData(data):
     # add description length
     # data['text_length'] = round(data['description'].str.len()/100)
     data['text_length'] = round(data['description'].str.len())
-    data.loc[(data.text_length < 758), 'text_length'] = 0
-    data.loc[(data.text_length > 0) & (data.text_length < 1335), 'text_length'] = 1
-    data.loc[(data.text_length > 1) & (data.text_length < 2007), 'text_length'] = 2
-    data.loc[(data.text_length >= 2007), 'text_length'] = 3
+    print('Text_length Quantiles')
+    print(data['text_length'].quantile(0.25))
+    print(data['text_length'].quantile(0.5))
+    print(data['text_length'].quantile(0.75))
+    data.loc[(data.text_length < 724), 'text_length'] = 0
+    data.loc[(data.text_length > 0) & (data.text_length < 1299), 'text_length'] = 1
+    data.loc[(data.text_length > 1) & (data.text_length < 1962), 'text_length'] = 2
+    data.loc[(data.text_length >= 1962), 'text_length'] = 3
 
     # round errorPercentage to two digits
     # data['errorPercentage'] = round(data['errorPercentage'], 2)
     data.loc[(data.errorPercentage >= 1), 'errorPercentage'] = 0.99
+    print('ErorrP Quantiles')
+    print(data['errorPercentage'].quantile(0.25))
+    print(data['errorPercentage'].quantile(0.5))
+    print(data['errorPercentage'].quantile(0.75))
     data.loc[(data.errorPercentage < 0.013), 'errorPercentage'] = 0
-    data.loc[(data.errorPercentage > 0) & (data.errorPercentage < 0.0213), 'errorPercentage'] = 1
-    data.loc[(data.errorPercentage > 0) & (data.errorPercentage < 0.0341), 'errorPercentage'] = 2
-    data.loc[(data.errorPercentage >= 0.0341) & (data.errorPercentage < 1), 'errorPercentage'] = 3
+    data.loc[(data.errorPercentage > 0) & (data.errorPercentage < 0.0212), 'errorPercentage'] = 1
+    data.loc[(data.errorPercentage > 0) & (data.errorPercentage < 0.034), 'errorPercentage'] = 2
+    data.loc[(data.errorPercentage >= 0.034) & (data.errorPercentage < 1), 'errorPercentage'] = 3
 
     # round plz to three digits
     data['location_postalCode'] = round(data['location_postalCode'] / 100, 0)
