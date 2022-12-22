@@ -30,3 +30,8 @@ neuer Test: Länge in Chars und Länge in Wörtern über/unter Median
 alle Features:
 {'acc_test': 0.5724845309103072, 'acc_train': 0.637930073360537, 'fbeta_test': 0.5796132257498684, 'fbeta_train': 0.6449659183461515}
 -> errorP > cap_words > word_cnt, dann einige Text, text_length vorletzter
+
+
+22.12.2022 10:46
+Quantiles for Metadata
+{'acc_test': 0.5722058085734991, 'acc_train': 0.633306018239793, 'fbeta_test': 0.5644460083771298, 'fbeta_train': 0.6278383615507559}
