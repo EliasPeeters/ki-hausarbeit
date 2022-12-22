@@ -29,6 +29,21 @@ if __name__ == '__main__':
     # load features_raw
     features_raw = pd.read_csv('preProcessed/features_raw.csv')
 
+    features_raw.drop('guenstig', axis=1, inplace=True)
+    features_raw.drop('oepnv', axis=1, inplace=True)
+    features_raw.drop('geschaeft', axis=1, inplace=True)
+    features_raw.drop('distanz', axis=1, inplace=True)
+    features_raw.drop('teuer', axis=1, inplace=True)
+    features_raw.drop('arbeit', axis=1, inplace=True)
+    features_raw.drop('ausbildung', axis=1, inplace=True)
+    features_raw.drop('studium', axis=1, inplace=True)
+    features_raw.drop('ausstattung', axis=1, inplace=True)
+
+    # features_raw.drop('text_length', axis=1, inplace=True)
+    # features_raw.drop('capital_words', axis=1, inplace=True)
+    # features_raw.drop('word_cnt', axis=1, inplace=True)
+    # features_raw.drop('errorPercentage', axis=1, inplace=True)
+
     # load price_raw
     price_raw = pd.read_csv('preProcessed/price_raw.csv')
 
