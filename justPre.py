@@ -1,6 +1,6 @@
 import mainNewOhneText
 
-data = mainNewOhneText.read_data('Result_8.csv')
+data = mainNewOhneText.read_data('Result_27.csv')
 data = data.dropna()
 
 price_raw, features_raw = mainNewOhneText.storePriceSeperate(data)

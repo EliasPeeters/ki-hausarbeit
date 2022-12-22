@@ -19,15 +19,16 @@ from colorama import Fore, Back, Style
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import matplotlib.pyplot as plt
 from sklearn.metrics import PrecisionRecallDisplay
-
+from sklearn.metrics import precision_recall_curve
+from sklearn.metrics import precision_score, recall_score
 import warnings
 
 warnings.simplefilter(action='ignore', category=pd.errors.PerformanceWarning)
 
 
-def read_data():
+def read_data(file_name):
     # Use a breakpoint in the code line below to debug your script.
-    file_name = 'Result_27.csv'
+    # file_name = 'Result_8.csv'
     # file_name = 'dataNormalized.csv'
     # file_name = 'allNormalizedDifference.csv'
     print(Fore.GREEN + 'Reading data from file: ' + file_name)
@@ -203,6 +204,9 @@ def preProcessData(data):
     # get age of user from description when he wrote number + "Jahre"
     # data['age'] = data['description'].str.findall(r'(\d+)Jahre').str[0].astype(int)
 
+
+
+
     # data['word_balkon'] = data['description'].str.contains('balkon').astype(int)
     # data['word_trockner'] = data['description'].str.contains('trockner').astype(int)
     return data
@@ -226,13 +230,14 @@ def splitData(price_raw, features_raw):
 def train_model(X_train, y_train):
     # model = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
     # model = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)
-    model = DecisionTreeClassifier(random_state=42)
+    # model = DecisionTreeClassifier(random_state=42)
     # model = SVC(verbose=True)
     # model = GaussianNB()
     # model = KNeighborsClassifier()
     # model = LogisticRegression(random_state=42, n_jobs=-1)
     # model = MLPClassifier()
-    # model = AdaBoostClassifier(random_state=42, n_estimators=100)
+    model = AdaBoostClassifier(random_state=42, n_estimators=100)
+
 
     start = time()  # Get start time
     learner = model.fit(X_train, y_train.astype('int').values.ravel())
@@ -244,7 +249,7 @@ def train_model(X_train, y_train):
     return model
 
 
-def test_model(model, X_test, y_test, X_train, y_train):
+def test_model(model, X_test, y_test, X_train, y_train, name="Model", folder=""):
     results = {}
     predictions_test = model.predict(X_test)
     predictions_train = model.predict(X_train)
@@ -253,20 +258,33 @@ def test_model(model, X_test, y_test, X_train, y_train):
     y_test_helper = y_test.to_numpy()
     y_train_helper = y_train.to_numpy()
 
+    precision, recall, thresholds = precision_recall_curve(y_test_helper, predictions_test)
+
+    results['name'] = name
     results['acc_test'] = accuracy_score(y_test_helper, predictions_test)
     results['acc_train'] = accuracy_score(y_train_helper, predictions_train)
     results['fbeta_test'] = fbeta_score(y_test_helper, predictions_test, beta=1)
     results['fbeta_train'] = fbeta_score(y_train_helper, predictions_train, beta=1)
+    results['precision_test'] = precision_score(y_test_helper, predictions_test)
+    results['precision_train'] = precision_score(y_train_helper, predictions_train)
+    results['recall_test'] = recall_score(y_test_helper, predictions_test)
+    results['recall_train'] = recall_score(y_train_helper, predictions_train)
+    results['acc_train_test_diff'] = results['acc_train'] - results['acc_test']
+    results['fbeta_train_test_diff'] = results['fbeta_train'] - results['fbeta_test']
 
     display = PrecisionRecallDisplay.from_estimator(
-        model, X_test, y_test_helper, name="LinearSVC"
+        model, X_test, y_test_helper, name=name
     )
     _ = display.ax_.set_title("2-class Precision-Recall curve")
+    # save figure
+    plt.savefig(folder + "/" + name + "_precisionRecall.png")
+    plt.close()
 
     print(results)
+    return results
 
 
-def visualize_feature_importance(model, data_for_names):
+def visualize_feature_importance(model, data_for_names, name="Model", folder="images"):
     importance = model.feature_importances_
     col_names = []
     # summarize feature importance
@@ -287,12 +305,14 @@ def visualize_feature_importance(model, data_for_names):
     plt.figure(figsize=(9, 3))
     # plt.subplot(131)
     plt.barh(names, values)
-    plt.suptitle('Categorical Plotting')
+    plt.suptitle(name)
+    plt.savefig(folder + "/" + name + "_feature_importance.png")
     plt.show()
+    return plt
 
 
 if __name__ == '__main__':
-    data = read_data()
+    data = read_data('Result_8.csv')
     print(Style.RESET_ALL + 'read data')
 
     # remove nan values
